@@ -30,7 +30,6 @@ var inputPhoneNumber = (function() {
 	}
 
 	function checkInput(event) {
-		console.log(event);
 		if ((!isNumeric(event.key) || event.target.value.length > 13) && (event.keyCode !== 8)){
 			event.preventDefault();
 			return false;
